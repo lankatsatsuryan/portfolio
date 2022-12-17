@@ -22,11 +22,8 @@
         line-height: 21px;
         color: #000000;
     }
-    &_divider {
-        width: 60px;
-        height: 3px;
-        background-color: $main-color;
-        margin-bottom: 20px;
+    .divider {
+        margin-bottom: 20px; 
     }
     &_subtitle {
         position: relative;
@@ -45,12 +42,9 @@
         grid-template-columns: 40px 200px;
         column-gap: 20px;
     }
-    &_mini_par {/* 
-        padding-left: 20px; */
-    }
     &_mini_texts {
         display: grid;
-        grid-template-columns: 260px 260px;
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
         grid-auto-rows: 1fr;
         column-gap: 50px;
         row-gap: 20px;

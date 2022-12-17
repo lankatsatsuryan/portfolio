@@ -14,6 +14,11 @@
     width: 1140px;
     margin: 0 auto;
 }
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+}
 
 @import 'blocks/promo';
 @import 'blocks/buttons';
@@ -21,4 +26,8 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/work';
+@import 'blocks/portfolio';
+@import 'blocks/price';
 

@@ -9,3 +9,9 @@ $(function(){
     });
 
 });
+
+const counters = document.querySelectorAll('.work_rating_per'),
+    lines = document.querySelectorAll('.work_rating_line span');
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
