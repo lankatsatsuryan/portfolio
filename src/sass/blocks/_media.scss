@@ -1,0 +1,297 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &_me {
+            grid-template-columns: 395px 550px;
+            column-gap: 15px;
+        }
+        &_mini_texts {
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+            column-gap: 10px;
+        }
+    }
+    .resume {
+        &_wrapper {
+            padding: 60px 0;
+            column-gap: 60px;
+        }
+    }
+    .work {
+        &_wrapper {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &_rating {
+            grid-template-columns: repeat(auto-fit,350px);
+            justify-content: space-between;
+            grid-auto-rows: minmax(70px, auto);
+        }
+    }
+    .portfolio {
+        .horizontal, .vertical {
+            grid-row: unset;
+            grid-column: unset;
+        }
+        &_wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+    }
+    .contacts {
+        &_wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &_triggers {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about {
+        .title {
+            &_name {
+                font-size: 30px;
+            }
+        } 
+        &_me {
+            grid-template-columns: 300px 380px;
+        }
+        &_mini_texts {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px,auto);
+            row-gap: 0;
+        }
+        &_mini_wrapper {
+            grid-template-columns: 32px 300px;
+        }
+    }
+    .resume {
+        padding: 0;
+        &_title {
+            font-size: 30px;
+        }
+        &_wrapper {
+            grid-template-columns: repeat(2,335px);
+        }
+    }
+    .work {
+        &_wrapper {
+            padding: 0 20px;
+        }
+        &_rating {
+            margin-top: 50px;
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
+        }
+    } 
+    .price {
+        &_wrapper {
+            padding: 0;
+        }
+    }
+    .contacts {
+        &_wrapper {
+            padding: 0;
+            grid-template-columns: 300px 400px;
+        }
+        &_form {
+            grid-template: 45px 135px 45px / repeat(2, 195px);
+        }
+        &_btn {
+            padding: 8px 25px; 
+            font-size: 10px;
+        }
+        &_photo {
+            grid-row: unset;
+        }
+        &_next {
+            column-gap: 40px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &_title {
+            width: 300px;
+            line-height: 39px;
+        }
+    }
+    .about {
+        &_me {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &_mini_texts {
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,260px);
+        }
+        &_mini_wrapper {
+            grid-template-columns: 40px 200px;
+        }
+        &_photo {
+            grid-row: unset;
+        }
+    }
+    .resume {
+        &_wrapper {
+            grid-template-columns: repeat(2,262px);
+            column-gap: 14px;
+        }
+    }
+   .work {
+        &_wrapper {
+            padding: 0;
+            justify-content: center;
+        }
+        &_rating {
+            padding: 0;
+            justify-content: center;
+        }
+    } 
+    .portfolio {
+        padding-bottom: 50px;
+    }
+    .price {
+        &_wrapper {
+            grid-template-columns: repeat(auto-fit, 302px);
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+    .contacts {
+        &_wrapper {
+            grid-template-columns: 1fr;
+        }
+        &_form {
+            grid-template: 45px 135px 45px / repeat(2, 250px);
+        }
+        &_btn {
+            padding: 8px 25px; 
+            font-size: 10px;
+        }
+        &_photo {
+            display: none;
+        }
+        &_title {
+            font-size: 24px;
+        }
+        &_triggers {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title_fz48 {
+        font-size: 26px;
+    }
+    .menu {
+        &_block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .promo {
+        background: url('../img/Background.jpg') no-repeat 57%/cover;
+        &_btns {
+            margin-top: 30px;
+        }
+    }
+    .about {
+        padding: 40px 0;
+        &_me {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &_mini_texts {
+            grid-template-columns: 1fr;
+        }
+        .title {
+            &_name {
+                font-size: 24px;
+            }
+        } 
+    }
+    .resume {
+        &_wrapper {
+            grid-template-columns: 1fr;
+            padding-top: 20px;
+        }
+        &_title {
+            font-size: 24px;
+        }
+    }
+    .work {
+        &_title {
+            font-size: 23px;
+        }
+        &_rating {
+            grid-template-columns: repeat(auto-fit,300px)
+        }
+    } 
+    .price {
+        padding-bottom: 50px;
+        &_wrapper {
+            grid-template-columns: repeat(auto-fit, 268px);
+            padding-left: 10px;
+        }
+    }
+    .contacts {
+      padding-bottom: 50px;
+        &_form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &_textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &_next {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &_btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &_triggers {
+            width: 200px;
+            margin: 0 auto;
+            line-height: 18px;
+            span {
+                text-align: center;
+            }
+        }
+    }
+}
